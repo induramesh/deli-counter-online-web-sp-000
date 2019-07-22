@@ -9,8 +9,9 @@ def line(deli)
     puts "The line is currently empty."
   else #there are people in line
     puts "The line is currently: "
-    deli.each { |name| puts "#{deli.index(name) + 1}. #{name}" }
- end 
+    puts deli 
+    #deli.each { |name| puts "#{deli.index(name) + 1}. #{name}" }
+  end 
 end 
 
 def now_serving(deli)
