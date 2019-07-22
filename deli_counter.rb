@@ -8,8 +8,11 @@ def line(deli)
   if deli.size == 0 
     puts "The line is currently empty."
   else #there are people in line
-    fragment = ""deli.each { |name| puts "#{deli.index(name) + 1}. #{name}" }
-  end 
+    fragment = ""
+    deli.each_with_index do |customer, idx|
+    fragment << " #{idx + 1}. #{customer}"
+    end
+  puts "
 end 
 
 def now_serving(deli)
