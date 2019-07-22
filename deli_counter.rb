@@ -9,9 +9,7 @@ def line(deli)
   if deli.size == 0 
     puts "The line is currently empty."
   else #there are people in line
-    deli.each do |name|
-      puts "The line is currently: #{deli.index(name) + 1}. #{name}"
-    end
+    deli.each { |name| puts "The line is currently: #{deli.index(name) + 1}. #{name}" }
  end 
 end 
 
