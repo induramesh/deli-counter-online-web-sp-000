@@ -12,7 +12,8 @@ def line(deli)
     deli.each_with_index do |customer, idx|
     fragment << " #{idx + 1}. #{customer}"
     end
-  puts "
+    puts "The line is currently:#{fragment}"
+  end 
 end 
 
 def now_serving(deli)
