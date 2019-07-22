@@ -12,7 +12,7 @@ def line(deli)
     deli.each do |name|
       puts "#{deli.index(name) + 1}. name"
     end
-  end 
+ end 
 end 
 
 def now_serving(deli)
