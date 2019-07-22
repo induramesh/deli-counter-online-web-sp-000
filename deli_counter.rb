@@ -8,7 +8,8 @@ def line(deli)
   if deli.size == 0 
     puts "The line is currently empty."
   else #there are people in line
-    puts "The line is currently: #{deli.each { |name| "#{deli.index(name) + 1}. #{name}" }}"
+    puts "The line is currently: "
+    deli.each { |name| puts "#{deli.index(name) + 1}. #{name}" }
   end 
 end 
 
